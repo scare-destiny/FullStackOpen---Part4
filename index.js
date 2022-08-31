@@ -17,19 +17,6 @@ app.use('/api/blogs', blogsRouter)
 logger.info(`connected to baza ${config.MONGODB_URI}`)
 
 
-
-// app.get('/api/blogs', async (request, response) => {
-// 	const blogs = await Blog.find({})
-// 	response.json(blogs)
-// })
-
-// app.post('/api/blogs', async (request, response) => {
-// 	const blog = new Blog(request.body)
-
-// 	const result = await blog.save()
-// 	response.status(201).json(result)
-// })
-
 app.listen(config.PORT, () => {
 	logger.info(`Server running on port ${config.PORT}`)
 })
