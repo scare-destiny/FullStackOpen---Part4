@@ -1,13 +1,54 @@
-GET http://localhost:3001/api/blogs
+GET http://localhost:3001/api/users
 
 
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdvZCIsImlkIjoiNjMxNzBiNWIzNTk5OTc4ZDY1OTk3NGY3IiwiaWF0IjoxNjYyNDgyMjQ4fQ.-ZGfj1_ZJXxUpBzNkdM0_FLZcKTE9c2ehf0r9yuOw20
 
 {
-	"title": "lol",
-	"author": "Batya",
-	"url": "http://localhost:3001/api/blogs",
+	"title": "fff!!!",
+	"author": "testcheck",
+	"url": "monkeybar",
 	"likes": 20
+}
+
+###
+post http://localhost:3001/api/login
+Content-Type: application/json
+
+
+{
+	    "username": "god",
+			"name": "god",
+			"password": "god"
+
+}
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdvZCIsImlkIjoiNjMxNzBiNWIzNTk5OTc4ZDY1OTk3NGY3IiwiaWF0IjoxNjYyNDU0NjI2fQ.J3J4Wf7Ys1U8fLN2AITTq8RzYxxy4RMGJW7xxuFoIMo
+
+{
+	"title": "woof",
+		"author": "!.author",
+		"url": "!.url",
+		"likes": 9999,
+		"userId": "6316f0b438941bad4eff0e04"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/6317775cad265715c4352fdb
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImdvZCIsImlkIjoiNjMxNzBiNWIzNTk5OTc4ZDY1OTk3NGY3IiwiaWF0IjoxNjYyNDU0NjI2fQ.J3J4Wf7Ys1U8fLN2AITTq8RzYxxy4RMGJW7xxuFoIMo
+
+### 
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+		  "username": "gods",
+			"name": "god",
+			"password": "god"
 }
